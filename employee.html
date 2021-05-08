@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Profile</title>
+    <link rel="stylesheet" href="style/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!-- Main css -->
+    <link rel="stylesheet" href="style/css/employee.css">
+    <style>
+
+
+    </style>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand">Attendence System</a>
+            <button class="navbar-toggler btn" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="employee.html">Profile</a>
+                    </li>
+                </ul>
+
+                <div class="d-flex">
+                    <button class="btn btn-danger" id="logout" type="submit">Logout</button>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+
+
+    <div class="container ">
+        <div class="row my-5 py-3">
+            <div class="img-time col-md-6">
+                <img class="img-fluid" src="/images/employee.JPG" alt="">
+            </div>
+            <div class="col-md-6">
+                <div class="row py-3">
+                    <div class="col-md-4">
+                        <h3 id="name"></h3>
+                    </div>
+                    <div class="col-md-8">
+                        <nav>
+                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                <a class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" href="#dailyReport"
+                                    role="tab" aria-controls="nav-home" aria-selected="true">daily report</a>
+                                <a class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" href="#monthlyReport"
+                                    role="tab" aria-controls="nav-profile" aria-selected="false">monthly report</a>
+                                <a class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" href="#yearlyReport"
+                                    role="tab" aria-controls="nav-contact" aria-selected="false">yearly Report</a>
+                            </div>
+                        </nav>
+                        <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="dailyReport" role="tabpanel"
+                                aria-labelledby="nav-home-tab"></div>
+                            <div class="tab-pane fade" id="monthlyReport" role="tabpanel"
+                                aria-labelledby="nav-profile-tab"></div>
+                            <div class="tab-pane fade" id="yearlyReport" role="tabpanel"
+                                aria-labelledby="nav-contact-tab"> </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+
+
+        <!--script-->
+        <script src="https://kit.fontawesome.com/fa50145e5d.js" crossorigin="anonymous"></script>
+        <script src="style/js/bootstrap.min.js"></script>
+        <script src="style/js/jquery-3.4.1.min.js"></script>
+        <script src="style/js/popper.min.js"></script>
+        <script src="style/js/employee.js"></script>
+</body>
+
+</html>

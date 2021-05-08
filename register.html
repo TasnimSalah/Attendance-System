@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>register</title>
+    <link rel="stylesheet" href="style/css/bootstrap.min.css">
+    <!-- Main css -->
+    <link rel="stylesheet" href="style/css/registration.css">
+
+</head>
+
+<body>
+    <!-- Sign up form -->
+    <section class="signup my-3">
+        <div class="container">
+            <div class="signup-content py-4 row">
+                <div class="signup-image col-md-6">
+                    <figure><img src="images/signup-image.jpg" alt="sing up image"></figure>
+                </div>
+                <div class="signup-form col-md-6">
+                    <h2 class="form-title my-4">Register</h2>
+
+
+                    <form method="POST" class="row register-form" action="login.html" id="register-form" >
+                        <div class="form-group col-md-6">
+                            <label for="name"><i class="fas fa-user"></i></label>
+                            <input type="text" name="firstName" id="inputFirstName" placeholder="Your First Name" required />
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="name"><i class="fas fa-user"></i></label>
+                            <input type="text" name="lastName" id="inputLastName" placeholder="Your Last Name" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="name"><i class="fas fa-user"></i></label>
+                            <input type="text" name="userName" id="inputUserName" placeholder="User Name" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="email"><i class="fas fa-envelope"></i></label>
+                            <input type="email" name="email" id="inputEmail" placeholder="Your Email" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="email"><i class="fas fa-lock"></i></label>
+                            <input type="password" name="password" id="inputPassword" placeholder="password" required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$" />
+                        </div>
+                        <div class="form-group">
+                            <label for="name"><i class="fas fa-map-marker-alt"></i></label>
+                            <input type="text" name="address" id="inputAddress" placeholder="Your Address" required />
+                        </div>
+                        <div class="form-group">
+                            <label ><i class="fas fa-stopwatch-20"></i></label>
+                            <input type="number" name="age" id="inputAge" placeholder="Your Age" required pattern="^[2-4][0-9]$"/>
+                        </div>
+                        <div class="form-group row justify-content-center">
+                            <input type="submit" name="signup" id="signup" class="form-submit  col-md-3 mx-3" value="Register" />
+                            <a href="login.html" class="form-submit  col-md-3 mx-3">login</a>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+ 
+    <!--script-->
+    <script src="https://kit.fontawesome.com/fa50145e5d.js" crossorigin="anonymous"></script>
+    <script src="style/js/bootstrap.min.js"></script>
+    <script src="style/js/jquery-3.4.1.min.js"></script>
+    <script src="style/js/popper.min.js"></script>
+    <script src="style/js/register.js"></script>
+
+</body>
+
+</html>

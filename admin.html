@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Admin pannel</title>
+    <link rel="stylesheet" href="style/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!-- Main css -->
+    <link rel="stylesheet" href="style/css/admin.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" >Attendence System</a>
+          <button class="navbar-toggler btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="confirmAttendence.html">confirm Attendence</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="admin.html">admin</a>
+              </li>
+            </ul>
+
+            <div class="d-flex">
+                <button class="btn" id="logout" type="submit">Logout</button>
+            </div>
+
+          </div>
+        </div>
+      </nav>
+    <div class="container pt-3">
+        <div class="d-flex justify-content-center">
+            <h1 class="my-4">Admin Pannel</h1>
+        </div>
+        <section id="reports" class="my-4 row">
+            <h3>Reports</h3>
+            <div id="tabs" class="col-sm-12">
+                <div class="col-md-9">
+                    <nav class="bg-dark">
+                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                            <a class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" href="#allEmployees"
+                                role="tab" aria-controls="nav-home" aria-selected="true">All Employees</a>
+                            <a class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" href="#fullReport"
+                                role="tab" aria-controls="nav-profile" aria-selected="false">Full report</a>
+                            <a class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" href="#lateReport"
+                                role="tab" aria-controls="nav-contact" aria-selected="false">Late Report</a>
+                        </div>
+                    </nav>
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="allEmployees" role="tabpanel"
+                            aria-labelledby="nav-home-tab">
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead >
+                                        <th>Employee Name</th>
+                                        <th>Attendence</th>
+                                        <th>Late</th>                     
+                                    </thead>
+                                    <tbody id="allEmploreesReportTable">
+                                                              
+                                    </tbody>
+                                </table>
+                              </div>
+                        
+                        </div>
+                        <div class="tab-pane fade" id="fullReport" role="tabpanel"
+                            aria-labelledby="nav-profile-tab">.........</div>
+                        <div class="tab-pane fade" id="lateReport" role="tabpanel"
+                            aria-labelledby="nav-contact-tab"> ...............</div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </section>
+        <section id="newEmp" class="my-4" >
+            <h3>New Employees</h3>
+            <div id="table" class="table-responsive">
+                <table class="table table-striped " id="confirmTable">
+                    <thead class="table-dark">
+                        <th>first Name</th>
+                        <th>last Name</th>
+                        <th>user Name</th>
+                        <th>email</th>
+                        <th>password</th>
+                        <th>address</th>
+                        <th>age</th>
+                        <th>Action</th>                      
+                    </thead>
+                    <tbody id="tableBody">
+                                              
+                    </tbody>
+                  </table>
+
+            </div>
+        </section>
+
+
+    </div>
+
+
+
+    <!--script-->
+    <script src="https://kit.fontawesome.com/fa50145e5d.js" crossorigin="anonymous"></script>
+    <script src="style/js/bootstrap.min.js"></script>
+    <script src="style/js/jquery-3.4.1.min.js"></script>
+    <script src="style/js/popper.min.js"></script>
+    <script src="style/js/admin.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+[
+    {
+        "userName": "admin",
+        "password": "Admin923"
+    },
+    {
+        "firstName": "tasnem",
+        "lastName": "salah",
+        "address": "tanta",
+        "age": "25",
+        "email": "tasnem@gmail.com",
+        "userName": "tasnemSalah",
+        "password": "Tasnem923",
+        "is_new": false,
+        "code": 1086,
+        "position": "sub_admin"
+    },
+    {
+        "firstName": "ahmed",
+        "lastName": "salah",
+        "address": "cairo",
+        "age": "20",
+        "email": "ahmed@gmail.com",
+        "userName": "ahmed",
+        "password": "Ahmed923",
+        "is_new": false,
+        "code": 5717,
+        "position": "emp"
+    },
+    {
+        "firstName": "ABC",
+        "lastName": "salah",
+        "address": "cairo",
+        "age": "20",
+        "email": "abc@abc.com",
+        "userName": "abcsalah",
+        "password": "Abcsalah923",
+        "is_new": false,
+        "code": 2913,
+        "position": "emp"
+    },
+    {
+        "firstName": "mohammed",
+        "lastName": "mahmoud",
+        "address": "alex",
+        "age": "30",
+        "email": "mohammed@gmail.com",
+        "userName": "mohammedM",
+        "password": "mohAmmed923",
+        "is_new": false,
+        "code": 5252
+    },
+    {
+        "firstName": "shima",
+        "lastName": "ahmed",
+        "address": "mansoura",
+        "age": "26",
+        "email": "shima@gmail.com",
+        "userName": "shosho",
+        "password": "Shosho123456",
+        "is_new": false,
+        "code": 1489
+    },
+    {
+        "firstName": "ekhlas",
+        "lastName": "ali",
+        "address": "mansoura",
+        "age": "23",
+        "email": "ekhlas@gmail.com",
+        "userName": "ekhlas",
+        "password": "Ekhlas923@",
+        "is_new": true
+    },
+    {
+        "firstName": "nasr",
+        "lastName": "kasem",
+        "address": "mansoura",
+        "age": "01",
+        "email": "nasrksem@gmail.com",
+        "userName": "nasrkasm",
+        "password": "Kasem923",
+        "is_new": false,
+        "code": 1288,
+        "position": "emp"
+    }
+]

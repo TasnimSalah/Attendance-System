@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Confirm Attendence</title>
+    <link rel="stylesheet" href="style/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!-- Main css -->
+    <link rel="stylesheet" href="style/css/confirmAttendence.css">
+    <style>
+        
+    
+    </style>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" >Attendence System</a>
+          <button class="navbar-toggler btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="confirmAttendence.html">confirm Attendence</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="employee.html">Profile</a>
+              </li>
+            </ul>
+
+            <div class="d-flex">
+                <button class="btn btn-danger" id="logout" type="submit">Logout</button>
+            </div>
+
+          </div>
+        </div>
+      </nav>
+
+    
+
+    <div class="container ">
+
+        <div class="row align-items-center my-5">
+            <div class="img-time col-md-6">
+                <img class="img-fluid" src="../images/Capture.JPG" alt="">
+
+            </div>
+            <div class=" form col-md-6">
+                <form class="row g-3">
+                    <div class="col-md-6">
+                        <label for="name"><i class="fas fa-user"></i></label>
+                        <input type="text" name="code" id="inputCode" placeholder="user code" required />
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" style="background-color: #4F5873;" class="btn  my-3" id="confirmbtn">Confirm Attendence</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!--script-->
+    <script src="https://kit.fontawesome.com/fa50145e5d.js" crossorigin="anonymous"></script>
+    <script src="style/js/bootstrap.min.js"></script>
+    <script src="style/js/jquery-3.4.1.min.js"></script>
+    <script src="style/js/popper.min.js"></script>
+    <script src="style/js/confirmAttendence.js"></script>
+</body>
+
+</html>
