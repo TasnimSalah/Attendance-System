@@ -1,9 +1,10 @@
 let inputFirstName = document.getElementById('inputFirstName');
-let inputLastName = document.getElementById('inputLastName');
 let inputAddress = document.getElementById('inputAddress');
 let inputEmail = document.getElementById('inputEmail');
+let emailValidation = document.getElementById('emailValidation');
 let inputAge = document.getElementById('inputAge');
 let inputUserName = document.getElementById('inputUserName');
+let userNameValidation = document.getElementById('userNameValidation');
 let inputPassword = document.getElementById('inputPassword');
 let form = document.getElementById('register-form');
 
@@ -28,14 +29,40 @@ let _url="employees.json";
 
   form.addEventListener('submit', function (e) {
     e.preventDefault();
+    let flag = true;
 
-    getData();
-    const NewData = new Blob([JSON.stringify(employees)], { type: "appliction/json" });
-    var link = document.createElement("a");
-    link.href = window.webkitURL.createObjectURL(NewData);
-    link.setAttribute("download", "employees.json");
-    document.body.appendChild(link);
-    link.click();
+    employees.forEach(item => {
+      if(item.userName == inputUserName.value){
+        userNameValidation.innerText = "not valid";
+       flag = false;
+      }
+    
+      console.log(inputEmail.value);
+      console.log(item.email);
+      if(item.email == inputEmail.value ){
+        console.log("email");
+        emailValidation.innerText = "this email already used";
+        flag = false;
+        
+      }
+      
+     
+    });
+
+    if(flag){
+      
+      getData();
+      const NewData = new Blob([JSON.stringify(employees)], { type: "appliction/json" });
+      var link = document.createElement("a");
+      link.href = window.webkitURL.createObjectURL(NewData);
+      link.setAttribute("download", "employees.json");
+      document.body.appendChild(link);
+      link.click();
+    }
+ 
+      
+
+   
 }); 
 
 

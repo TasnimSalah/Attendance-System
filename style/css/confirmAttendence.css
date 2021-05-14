@@ -13,12 +13,17 @@ body {
     box-shadow: 0px 15px 16.83px 0.17px rgba(0, 0, 0, 0.05);
     border-radius: 1.4rem;
   }
+  .form-group {
+    position: relative;
+    margin-bottom: 0.5rem;
+    overflow: hidden; 
+  }
 input {
     width: 100%;
     display: block;
     border: none;
     border-bottom: 1px solid #999;
-    padding: 6px 30px;
+    padding: 0.5rem 30px;
     font-family: Poppins;
     box-sizing: border-box; 
 }
@@ -29,4 +34,18 @@ input::-webkit-input-placeholder {
 input:focus {
     outline: none;
     border-bottom: 1px solid #222; 
+}
+label {
+    position: absolute;
+    left: 0;
+    top: 40%;
+    transform: translateY(-50%);
+    color: #222; 
+}
+#time{
+    color: #1e3b81;
+    color: #0d2a82;
+}
+#userName{
+    color: #c0342e;
 }

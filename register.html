@@ -33,14 +33,17 @@
                         <div class="form-group">
                             <label for="name"><i class="fas fa-user"></i></label>
                             <input type="text" name="userName" id="inputUserName" placeholder="User Name" required />
+                            <div id="userNameValidation" class="validation mt-1 text-danger"></div>
                         </div>
                         <div class="form-group">
                             <label for="email"><i class="fas fa-envelope"></i></label>
                             <input type="email" name="email" id="inputEmail" placeholder="Your Email" required />
+                            <div id="emailValidation" class="validation mt-1 text-danger"></div>
                         </div>
                         <div class="form-group">
                             <label for="email"><i class="fas fa-lock"></i></label>
-                            <input type="password" name="password" id="inputPassword" placeholder="password" required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$" />
+                            <!-- required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$" -->
+                            <input type="password" name="password" id="inputPassword" placeholder="password"  required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$"/>
                         </div>
                         <div class="form-group">
                             <label for="name"><i class="fas fa-map-marker-alt"></i></label>
@@ -48,7 +51,7 @@
                         </div>
                         <div class="form-group">
                             <label ><i class="fas fa-stopwatch-20"></i></label>
-                            <input type="number" name="age" id="inputAge" placeholder="Your Age" required pattern="^[2-4][0-9]$"/>
+                            <input type="number" name="age" id="inputAge" placeholder="Your Age" min="20" max="40"/>
                         </div>
                         <div class="form-group row justify-content-center">
                             <input type="submit" name="signup" id="signup" class="form-submit  col-md-3 mx-3" value="Register" />

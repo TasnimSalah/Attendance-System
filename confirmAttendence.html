@@ -48,21 +48,25 @@
 
     <div class="container ">
 
-        <div class="row align-items-center my-5">
-            <div class="img-time col-md-6">
+        <div class="d-flex align-items-center my-5">
+            <div class="img-time ">
                 <img class="img-fluid" src="../images/Capture.JPG" alt="">
 
             </div>
-            <div class=" form col-md-6">
+            <div class=" form ">
                 <form class="row g-3">
-                    <div class="col-md-6">
-                        <label for="name"><i class="fas fa-user"></i></label>
+                    <div class=" form-group">
+                        <label ><i class="fas fa-user"></i></label>
                         <input type="text" name="code" id="inputCode" placeholder="user code" required />
                     </div>
-                    <div class="col-12">
-                        <button type="submit" style="background-color: #4F5873;" class="btn  my-3" id="confirmbtn">Confirm Attendence</button>
+                    <div class="">
+                        <button type="submit" style="background-color: #4F5873;" class="btn text-light my-3" id="confirmbtn">Confirm Attendence</button>
                     </div>
                 </form>
+                <div class="row">
+                  <h5 id="userName"></h5>
+                  <h5 > <b id="state"> </b>   <span id="time"> </span> </h5>
+                </div>
             </div>
         </div>
     </div>
