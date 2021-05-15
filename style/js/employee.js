@@ -12,6 +12,7 @@ const currentTime =  new Date().toLocaleTimeString('en-US');
 
 
 let attendence = [];
+console.log(currentUser);
 
 $.ajax({
     url: "attendence.json",
@@ -69,10 +70,10 @@ const dailyreport = function(){
 const monthlyreport = function(){
     let attend = 0;
     let late = 0;
-    
+
     for(let i = 0 ; i<attendence.length ; i++){
         if(currentUser == attendence[i].code){
-            if(date.getMonth+1 === attendence[i].month){
+            if(date.getMonth()+1 === attendence[i].month){
                 attend++;
                 if(attendence[i].is_late){
                     late++;
@@ -99,7 +100,7 @@ const yearlyreport = function(){
     
     for(let i = 0 ; i<attendence.length ; i++){
         if(currentUser == attendence[i].code){
-            if(date.getFullYear === attendence[i].year){
+            if(attendence[i].year == +date.getFullYear()){
                 attend++;
                 if(attendence[i].is_late){
                     late++;

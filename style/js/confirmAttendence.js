@@ -47,13 +47,25 @@ confirmbtn.addEventListener('click', function (e) {
     if (!currentCode) {
         e.preventDefault();
     }
+
+    //check if he already confirme attendance before
+    attendence.forEach(item => {
+        if(item.code === +currentCode && item.date == d.toLocaleDateString('en-US')){
+            e.preventDefault();
+            state.innerText = `Already registerd for today `;
+        }
+    });
+
+
     for (let i = 1; i < employees.length; i++) {
 
         if (employees[i].code === +currentCode) {
-            console.log(employees[i]);
+            console.log(currentTime);
             userName.innerText = employees[i].userName;
+            
 
-            if (currentTime.split(':')[0] >= 9 && currentTime.split(':')[0] <= 10 && currentTime.split(':')[2].split(' ')[1] == "AM") {
+            //on time case
+            if (currentTime.split(':')[0] == 9 && currentTime.split(':')[1] <= 10 && currentTime.split(':')[2].split(' ')[1] == "AM") {
                 const newAttend = {
                     code: +currentCode,
                     userName: employees[i].userName,
@@ -72,8 +84,8 @@ confirmbtn.addEventListener('click', function (e) {
                 link.setAttribute("download", "attendence.json");
                 document.body.appendChild(link);
                 link.click();
-            }
-            else if (currentTime.split(':')[0] >= 10 && currentTime.split(':')[0] <= 11 && currentTime.split(':')[2].split(' ')[1] == "AM") {
+            }//late
+            else if (currentTime.split(':')[0] == 9 && currentTime.split(':')[2].split(' ')[1] == "AM") {
 
                 const newAttend = {
                     code: +currentCode,
