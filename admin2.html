@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Admin | Dashboard </title>
+    <!--bootstrap-->
+    <link rel="stylesheet" href="style/css/bootstrap.min.css">
+    <!--  style -->
+    <link rel="stylesheet" href="style/css/admin2.css">
+
+</head>
+
+<body class="hold-transition sidebar-mini">
+    <div class="wrapper">
+        <!-- Navbar -->
+        <nav class="main-header navbar navbar-expand   d-flex justify-content-between">
+            <!-- Left navbar links -->
+            <div class="container">
+            <ul class="navbar-nav">
+               
+                <li class="nav-item d-none d-sm-inline-block">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item d-none d-sm-inline-block">
+                    <a href="confirmAttendence.html" class="nav-link">Confirm Attendance</a>
+                </li>
+                <li class="nav-item d-none d-sm-inline-block">
+                    <a href="employee.html" class="nav-link">Profile</a>
+                </li>
+            </ul>
+            <div>
+                <a href="index.html" class="btn " id="logout"> 
+                    <i class="fas fa-sign-out-alt"></i> L O G O U T
+                </a>
+
+            </div>
+        </div>
+            
+
+           
+
+           
+        </nav>
+        <!-- /.navbar -->
+
+        <!-- Main Sidebar Container -->
+        <aside class="main-sidebar sidebar-dark-primary elevation-4">
+            <!-- Brand Logo -->
+            <div>
+            <a href="index3.html" class="brand-link">
+                <img src="images/Logo.png" alt="AdminLTE Logo" class=" img-circle img-fluid" style="opacity: .8">
+            </a>
+            <p class="mx-3"><strong>A D M I N</strong></p>
+        </div>
+
+            <!-- Sidebar -->
+            <div class="sidebar">
+               
+                <!-- Sidebar Menu -->
+                <nav class="mt-4">
+                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                       
+                        <li class="nav-item menu-open">
+                            <a href="admin2.html" class="nav-link active">
+                                <i class="nav-icon fas fa-chart-line"></i>
+                                <p>
+                                    Reports
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="newemps.html" class="nav-link">
+                                <i class="nav-icon fas fa-users"></i>
+                                <p>
+                                    New Employee
+                                  
+                                </p>
+                            </a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fas fa-user-check"></i>
+                                <p>
+                                    Subadmins
+                                </p>
+                            </a>
+
+                        </li> -->
+
+
+                    </ul>
+                </nav>
+                <!-- /.sidebar-menu -->
+            </div>
+            <!-- /.sidebar -->
+        </aside>
+
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+
+
+            <!-- Main content -->
+            <div class="content">
+                <div class="container-fluid">
+                    <section id="reports" class="my-4 row ">
+                      
+                        <div id="tabs" class="col-12">
+                            <div class="col-md-9">
+                                <nav class="mt-5">
+                                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                        <a class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" href="#allEmployees"
+                                            role="tab" aria-controls="nav-home" aria-selected="true">All Employees</a>
+                                        <a class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" href="#fullReport"
+                                            role="tab" aria-controls="nav-profile" aria-selected="false">Full report</a>
+                                        <a class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" href="#lateReport"
+                                            role="tab" aria-controls="nav-contact" aria-selected="false">Late Report</a>
+                                    </div>
+                                </nav>
+                                <div class="tab-content" id="nav-tabContent">
+                                    <div class="tab-pane fade show active" id="allEmployees" role="tabpanel"
+                                        aria-labelledby="nav-home-tab">
+                                        <div class="table-responsive">
+                                            <table class="table">
+                                                <thead >
+                                                    <th>Employee Name</th>
+                                                    <th>Attendence</th>
+                                                    <th>Late</th>                     
+                                                </thead>
+                                                <tbody id="allEmploreesReportTable">
+                                                                          
+                                                </tbody>
+                                            </table>
+                                          </div>
+                                    
+                                    </div>
+                                    <div class="tab-pane fade" id="fullReport" role="tabpanel"
+                                        aria-labelledby="nav-profile-tab">.........</div>
+                                    <div class="tab-pane fade" id="lateReport" role="tabpanel"
+                                        aria-labelledby="nav-contact-tab"> ...............</div>
+                                </div>
+                            </div>
+                        </div>
+            
+            
+            
+                    </section>
+
+                </div>
+                <!-- /.container-fluid -->
+            </div>
+            <!-- /.content -->
+        </div>
+        <!-- /.content-wrapper -->
+
+        <!-- Control Sidebar -->
+        <aside class="control-sidebar control-sidebar-dark">
+            <!-- Control sidebar content goes here -->
+        </aside>
+        <!-- /.control-sidebar -->
+
+
+    </div>
+    <!-- ./wrapper -->
+
+    <!-- SCRIPTS -->
+
+    <!--fontawesome Icons-->
+    <script src="https://kit.fontawesome.com/fa50145e5d.js" crossorigin="anonymous"></script>
+    <!-- jQuery -->
+    <script src="style/js/jquery-3.4.1.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="style/js/bootstrap.min.js"></script>
+    <!-- AdminLTE -->
+    <!-- <script src="style/js/admin2.js"></script> -->
+    <script src="style/js/admin.js"></script>
+</body>
+
+</html>

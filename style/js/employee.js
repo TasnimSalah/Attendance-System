@@ -79,7 +79,6 @@ const monthlyreport = function(){
                     late++;
                 }
             }
-            
         }
     }
 
